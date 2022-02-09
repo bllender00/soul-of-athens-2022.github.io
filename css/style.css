@@ -1,0 +1,34 @@
+:root {
+    --SGcolor1: #f2d6bb;
+    --SGcolor2: #d19449;
+    --SGcolor3: #c16228;
+    --SGcolor4: #865a51;
+    --SGcolor5: #716b4c;
+    --SGcolor6: #184950;
+    
+    --heading: 'Cormorant Garamond', serif;;
+    --body: 'Josefin Sans', sans-serif;
+  }
+
+body {
+    font-family: var(--body);
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading);
+    font-weight: 700;
+}
+
+#landingHero {
+    width: 100%;
+    position: relative;
+}
+
+#landingHero img {
+    width: 100%;
+}
