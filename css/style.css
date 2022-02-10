@@ -31,4 +31,63 @@ h4 {
 
 #landingHero img {
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#panelCont {
+    width: 80%;
+    height: 80vh;
+    padding: 10vh 10%;
+    display: flex;
+    background-color: var(--SGcolor1);
+}
+
+.panel {
+    display: flex;
+    width: 100vw;
+    border: solid 2px white;
+    flex-direction: column;
+    justify-content: center;
+    background: no-repeat center;
+    background-size: 100vw;
+    text-align: center;
+    filter: grayscale(0.75);
+    transition: all 0.4s ease-in-out;
+}
+
+.panel:hover, 
+.panel:active {
+    cursor: pointer;
+    background-size: 80vw;
+    filter: grayscale(0);
+    width: 250vw;
+}
+
+
+.cardText:hover,
+.cardText:active {
+    filter: none;
+}
+
+.cardText > * {
+    margin: 0.25em 0;
+}
+
+#introCont {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--SGcolor3);
+}
+
+#pastCont {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--SGcolor3);
+}
+
+#creditsCont {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--SGcolor6);
 }
