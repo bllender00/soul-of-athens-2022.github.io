@@ -43,13 +43,9 @@ h4 {
     background-color: var(--SGcolor1);
 }
 
-#panelCont > * {
-    flex: 1 1 10em;
-}
-
 .panel {
     display: flex;
-    width: 100%;
+    width: 100vw;
     border: solid 2px white;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +60,8 @@ h4 {
 .panel:active {
     cursor: pointer;
     background-size: 80vw;
-    filter: grayscale(0)
+    filter: grayscale(0);
+    width: 250vw;
 }
 
 
@@ -75,6 +72,18 @@ h4 {
 
 .cardText > * {
     margin: 0.25em 0;
+}
+
+#introCont {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--SGcolor3);
+}
+
+#pastCont {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--SGcolor3);
 }
 
 #creditsCont {
