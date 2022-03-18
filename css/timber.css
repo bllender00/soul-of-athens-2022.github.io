@@ -147,6 +147,7 @@ a {
     color: white;
 }
 
+#breadcrumbs a:hover,
 #breadcrumbs a:active {
     text-decoration: underline;
 }
@@ -173,6 +174,22 @@ a {
 #navbar > * {
     padding: 0.8em 2em;
     color: var(--bodyColor);
+}
+
+#navbar a:hover,
+#navbar a:active {
+    text-decoration: underline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + #hero {
+  padding-top: 60px;
 }
 
 /* HERO */
@@ -207,5 +224,10 @@ a {
 #stories {
     height: 100vh;
     background-color: var(--TColor-2);
+}
+
+#footer {
+    height: 100vh;
+    background-color: var(--TColor-3);
 }
 
