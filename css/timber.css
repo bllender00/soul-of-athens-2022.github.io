@@ -138,8 +138,9 @@ a {
 #breadcrumbs {
     display: flex;
     background-color: var(--TColor-3);
-    padding: 0.5em 1em;
+    padding: 0.75em 1em 3em;
     color: white;
+    font-size: 1rem;
 }
 
 #breadcrumbs a {
@@ -164,33 +165,74 @@ a {
 }
 
 /* NAVBAR */
-#navbar {
+header {
+    z-index: 1;
+    position: fixed;
+    width: 90%;
+    top: 1.75em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
     background-color: var(--TColor-1);
     font-size: clamp(1.25rem, calc(1.18rem + 0.36vw), 1.50rem);
-    display: flex;
-    justify-content: flex-end;
-}
+    color: var(--bodyColor);
+    transition: 0.3s;
+    transition-property: top;
+} 
 
-#navbar > * {
-    padding: 0.8em 2em;
+.logo {
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+} 
+
+header a {
     color: var(--bodyColor);
 }
 
-#navbar a:hover,
-#navbar a:active {
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-property: right;
+}
+
+.menu a {
+    padding: 1em 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:active {
     text-decoration: underline;
+    background-color: #e4c29f;
+}
+
+.btn {
+    cursor: pointer;
+    display: none;
+    padding: 1em;
+    font-size: 1.6rem;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: rgba(242,214,187,0.8);
+    transition: all 0.4s ease-in-out;
+    mix-blend-mode: screen 80%;
 }
 
-.sticky + #hero {
-  padding-top: 60px;
+.sticky:hover, 
+.sticky:active {
+    background-color: var(--TColor-1);
+    mix-blend-mode: normal;
 }
+
 
 /* HERO */
 #hero {
@@ -223,11 +265,78 @@ a {
 /* STORIES */
 #stories {
     height: 100vh;
-    background-color: var(--TColor-2);
 }
 
 #footer {
     height: 100vh;
-    background-color: var(--TColor-3);
 }
 
+@media (max-width: 1060px) {
+    
+    header {
+        padding: 0em 5%;
+    }
+    
+    .btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--TColor-1);
+        min-width: 35vw;
+        height: 100vh;
+        overflow: hidden;
+        top: inherit;
+        right: -100%;
+        /* opacity: 0.7; */
+    }
+
+    .menu a { 
+        min-width: 40vw;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 5.5vw;
+        padding: 1em;
+        /* background-color: red; */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #breadcrumbs {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        min-width: 100vw;
+    }
+
+    .menu a {
+        min-width: 100vw;
+    }
+    
+}
+
+@media screen and (max-width: 374px) {
+    header {
+        top: 2.5em
+    }
+    
+}
+  
+  
