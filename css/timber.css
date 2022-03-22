@@ -169,7 +169,7 @@ header {
     z-index: 1;
     position: fixed;
     width: 90%;
-    top: 1.75em;
+    /* top: 1.75em; */
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
@@ -208,13 +208,31 @@ header a {
 .menu a:hover,
 .menu a:active {
     text-decoration: underline;
-    background-color: #e4c29f;
+    background-color: hsl(50, 20%, 33%);
+}
+
+.menu-btn {
+    padding: 1em;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn:hover,
+.menu-btn:active {
+    background-color: hsl(29, 68%, 79%);
+}
+
+.close-btn {
+    transition: all 0.4s ease-in-out;
+}
+
+.close-btn:hover,
+.close-btn:active {
+    background-color: hsl(50, 20%, 30%);
 }
 
 .btn {
     cursor: pointer;
     display: none;
-    padding: 1em;
     font-size: 1.6rem;
 }
 
@@ -233,18 +251,30 @@ header a {
     mix-blend-mode: normal;
 }
 
+.current {
+    text-decoration: underline;
+    background-color: hsl(50, 20%, 30%);;
+}
+
+/* SUBLINKS */
+.sublinks {
+    display: none;
+}
+
 
 /* HERO */
 #hero {
     position: relative;
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
+    height: 100vh;
 }
 
 #hero img {
     width: 100%;
     object-fit: cover;
-    height: 90vh;
+    /* height: 90vh; */
+    height: 100vh;
 }
 
 #hero svg {
@@ -262,16 +292,79 @@ header a {
     transform: translateY(-25.5vh);
 }
 
-/* STORIES */
-#stories {
-    height: 100vh;
+/* PANELS */
+#panelCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
 }
+
+.panel {
+    display: flex;
+    margin: 5vh 0;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-end;
+    background: no-repeat center;
+    background-size: cover;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+}
+
+.firstPanel {
+    margin-top: 20vh;
+}
+
+.lastPanel {
+    margin-bottom: 20vh;
+}
+
+.panel h2 {
+    color: white;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+    width: 90vw;
+    margin: 10vh 0 2vh;
+    padding: 0rem 1rem;
+}
+
+.panel p {
+    background-color:rgba(53, 50, 37, 0.8);
+    color: white;
+    width: 50%;
+    margin: 0;
+    line-height: 2rem;
+    padding: 5vh 8vw 5vh 3vw;
+}
+
+.panel p span {
+    font-weight: 600;
+    font-size: clamp(1.25rem, calc(1.18rem + 0.36vw), 1.50rem);;
+    padding: 1em 0.5em 1em 0;
+}
+
+.panel p span:hover, 
+.panel p span:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* .cardText:hover,
+.cardText:active {
+    filter: none;
+}
+
+.cardText > * {
+    margin: 0.25em 0;
+} */
 
 #footer {
-    height: 100vh;
+    background-color: var(--TColor-3);
+    height: 20vh;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 2000px) {
     
     header {
         padding: 0em 5%;
@@ -284,12 +377,14 @@ header a {
     .menu {
         position: fixed;
         flex-direction: column;
-        background-color: var(--TColor-1);
+        background-color: var(--TColor-3);
+        color: white;
         min-width: 35vw;
         height: 100vh;
         overflow: hidden;
-        top: inherit;
-        right: -100%;
+        /* top: inherit; */
+        top: 0;
+        right: -105%;
         /* opacity: 0.7; */
     }
 
@@ -297,6 +392,7 @@ header a {
         min-width: 40vw;
         text-align: center;
         padding: 1em 0;
+        color: white;
     }
 
     .menu.active {
@@ -309,6 +405,13 @@ header a {
         right: 5.5vw;
         padding: 1em;
         /* background-color: red; */
+    }
+
+    /* SUBLINKS */
+    .sublinks {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(50, 20%, 47%);;
     }
 
 }
@@ -330,6 +433,32 @@ header a {
         min-width: 100vw;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    .panel {
+        height: 90vh;
+    }
+
+    .firstPanel {
+        margin-top: 11vh;
+    }
+
+    .lastPanel {
+        margin-bottom: 11vh;
+    }
+
+    .panel h2 {
+        margin: 20vh 0 2vh;
+    }
+
+    .panel p {
+        width: 80%;
+    }
+
+    #footer {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 374px) {
