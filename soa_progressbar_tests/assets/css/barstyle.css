@@ -1,0 +1,27 @@
+#scrollbar {
+  width: 2px;
+  height: 100%;
+  margin: 0 0 0 auto;
+  left: 30px;
+  top: 0;
+  position: fixed;
+  background-color: transparent;
+}
+
+#scrollbar #bar {
+  width: 300%;
+  height: 0%;
+  background-color: white;
+}
+
+.section {
+  height: 100vh;
+}
+
+.section:nth-child(even) {
+  background: green;
+}
+
+.section:nth-child(odd) {
+  background: red;
+}
