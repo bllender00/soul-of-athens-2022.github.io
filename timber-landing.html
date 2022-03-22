@@ -46,14 +46,14 @@
 <body>
 
 <!-- BREADCRUMBS -->
-<div id="breadcrumbs">
-    <!-- <a href="index.html">Soul of Athens HOME</a> | -->
+<!-- <div id="breadcrumbs">
+    <a href="index.html">Soul of Athens HOME</a> |
     <a href="index.html">Natural Land</a> |
     <a href="#">Coal</a> |
     <a class="active" href="timber-landing.html">Timber</a> |
     <a href="#">Clay</a> |
     <a href="#">Farm</a>
-</div>
+</div> -->
 
 <!-- NAVIGATION -->
 <header>
@@ -62,9 +62,16 @@
     <div class="btn">
       <i class="fa fa-xmark close-btn"></i>
     </div>
-    <a href="#" class="navLink1">I. History</a>
-    <a href="#stories" class="navLink2">II. Current Industry</a>
-    <a href="#footer" class="navLink3">III. Passions</a>
+    <a href="#" class="navLink1">Coal</a>
+    <a href="#" class="navLink2">Natural Land</a>
+    <a href="#" class="navLink3 current">Timber</a>
+    <div class="sublinks">
+      <a href="index.html" class="subLink1">I. History</a>
+      <a href="index.html" class="subLink2">II. Current Industry</a>
+      <a href="index.html" class="subLink3">III. History</a>
+    </div>
+    <a href="#" class="navLink4">Coal</a>
+    <a href="#" class="navLink5">Natural Land</a>
   </div>
 
   <div class="btn">
@@ -75,15 +82,33 @@
 <!-- HERO -->
 <div id="hero">
     <img src="images/timber/Timber_Drone Placeholder_Warren_3.17.22_draft1.png" alt="landingHeroDescription">
-    <a href="#stories"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
+    <a href="#panelCont"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
 </div>
 
-<div id="stories">
-
+<div id="panelCont">
+  <div class="panel firstPanel" style="background-image: url(images/panel-placeholder.jpg);">
+      <h2>I. History</h2>
+      <p>Worem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <br><br><span>Read More &#8594;</span>
+      </p>
+  </div>
+  
+  <div class="panel " style="background-image: url(images/panel-placeholder.jpg);">
+      <h2>II. Current Industry</h2>
+      <p>Worem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <br><br><span>Read More &#8594;</span>
+      </p>
+  </div>
+  
+  <div class="panel lastPanel" style="background-image: url(images/panel-placeholder.jpg);">
+      <h2>III. Passions</h2>
+      <p>Worem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <br><br><span>Read More &#8594;</span>
+      </p>
+  </div>
 </div>
 
 <div id="footer">
-
 </div>
 
 
@@ -100,9 +125,9 @@
     var menu = document.querySelector('.menu');
     var menuBtn = document.querySelector('.menu-btn');
     var closeBtn = document.querySelector('.close-btn');
-    var navLink1 = document.querySelector('.navLink1');
-    var navLink2 = document.querySelector('.navLink2');
-    var navLink3 = document.querySelector('.navLink3');
+    var subLink1 = document.querySelector('.subLink1');
+    var subLink2 = document.querySelector('.subLink2');
+    var subLink3 = document.querySelector('.subLink3');
     
     menuBtn.addEventListener("click", () => {
       menu.classList.add('active');
@@ -112,15 +137,15 @@
       menu.classList.remove('active');
     });
 
-    navLink1.addEventListener("click", () => {
+    subLink1.addEventListener("click", () => {
       menu.classList.remove('active');
     });
     
-    navLink2.addEventListener("click", () => {
+    subLink2.addEventListener("click", () => {
       menu.classList.remove('active');
     });
 
-    navLink3.addEventListener("click", () => {
+    subLink3.addEventListener("click", () => {
       menu.classList.remove('active');
     });
 </script>
