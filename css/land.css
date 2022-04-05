@@ -1,0 +1,501 @@
+:root {
+    /* --SOA-color1: #f2d6bb;
+    --SOA-color2: #d19449;
+    --SOA-color3: #c16228;
+    --SOA-color4: #865a51;
+    --SOA-color5: #716b4c;
+    --SOA-color6: #184950; */
+    
+    --TColor-1: #c16227;
+    --TColor-2: #333333;
+    --TColor-3: #716b4c;
+
+    --bodyColor: #ffffff;
+    
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Josefin Sans', sans-serif;
+	--sans2: 'Oswald', sans-serif;
+  }
+
+html {
+    scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+		background:url("../images/land/pexels-eva-elijas-7598387.jpg");
+    font-family: var(--sans);
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* BODY TEXT */
+p {
+    font-family: var(--sans);
+    font-weight: 300;
+    margin: 1em auto;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* IMAGE BLOCKS */
+.imgBlock img {
+    width: 100%;
+}
+
+.imgBlock p {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0.5em 0;
+}
+
+.caption {
+    font-weight: 100;
+}
+
+.img_center {
+    width: 70%;
+    margin: 1em auto;
+}
+
+.img_right {
+    width: 40%;
+    float: right;
+    margin: 0.5em 15% 0.5em 0.5em;
+}
+
+.img_left {
+    width: 40%;
+    float: left;
+    margin: 0.5em 1.25em 0.5em 15%;
+}
+
+.img_split {
+    width: 71%;
+    display: flex;
+    margin: 1em auto;
+    justify-content: space-between;
+}
+
+.img_split .img_center {
+    margin: 0 0.5em;
+}
+
+/* BREADCRUMBS */
+#breadcrumbs {
+    display: flex;
+    background-color: var(--TColor-3);
+    padding: 0.75em 1em 3em;
+    color: white;
+    font-size: 1rem;
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+    color: white;
+}
+
+#breadcrumbs a:hover,
+#breadcrumbs a:active {
+    text-decoration: underline;
+}
+
+#breadcrumbs .active {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#breadcrumbs > * {
+    padding: 0 0.5em;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+/* NAVBAR */
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    /* top: 1.75em; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    background-color: var(--TColor-1);
+    font-size: clamp(1.25rem, calc(1.18rem + 0.36vw), 1.50rem);
+    color: var(--bodyColor);
+    transition: 0.3s;
+    transition-property: top;
+} 
+
+.logo {
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+} 
+
+header a {
+    color: var(--bodyColor);
+}
+
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-property: right;
+}
+
+.menu a {
+    padding: 1em 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:active {
+    text-decoration: underline;
+    background-color: hsl(50, 20%, 33%);
+}
+
+.menu-btn {
+    padding: 1em;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn:hover,
+.menu-btn:active {
+    background-color: hsl(29, 68%, 79%);
+}
+
+.close-btn {
+    transition: all 0.4s ease-in-out;
+}
+
+.close-btn:hover,
+.close-btn:active {
+    background-color: hsl(50, 20%, 30%);
+}
+
+.btn {
+    cursor: pointer;
+    display: none;
+    font-size: 1.6rem;
+	border-radius: 5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: rgba(193,98,39,0.8);
+    transition: all 0.4s ease-in-out;
+    mix-blend-mode: screen 80%;
+}
+
+.sticky:hover, 
+.sticky:active {
+    background-color: var(--TColor-1);
+    mix-blend-mode: normal;
+}
+
+.current {
+    text-decoration: underline;
+    background-color: hsl(50, 20%, 30%);;
+}
+
+/* SUBLINKS */
+.sublinks {
+    display: none;
+}
+
+@media (max-width: 2000px) {
+    
+    header {
+        padding: 0em 5%;
+    }
+    
+    .btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--TColor-3);
+        color: white;
+        min-width: 35vw;
+        height: 100vh;
+        overflow: hidden;
+        /* top: inherit; */
+        top: 0;
+        right: -105%;
+        /* opacity: 0.7; */
+    }
+
+    .menu a { 
+        min-width: 40vw;
+        text-align: center;
+        padding: 1em 0;
+        color: white;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 5.5vw;
+        padding: 1em;
+        /* background-color: red; */
+    }
+
+    /* SUBLINKS */
+    .sublinks {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(50, 20%, 47%);;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #breadcrumbs {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        min-width: 100vw;
+    }
+
+    .menu a {
+        min-width: 100vw;
+    }
+    
+}
+
+@media screen and (max-width: 374px) {
+    header {
+        top: 2.5em
+    }
+    
+}
+
+
+
+@media screen and (max-width: 728px){
+	.landingtitle{
+margin: auto;width: 100%;
+		height: 100%;
+		transform: rotate(180deg);
+writing-mode: vertical-rl;
+	}
+	.bgimage h1{
+		padding: 0 0 0 0!important;
+		margin: 0 0 0 0!important;
+						line-height: .75em!important;
+		font-size: 10vw!important;
+text-align: center!important;
+		align-content: center!important;
+	justify-content: center!important;
+	}
+	.bgimage{
+		padding-left:15vw!important;
+	}
+
+}
+
+
+.bgimage {
+  width:100%;
+  height:100%;
+  background: url("../images/land/soa22_land_Trap_DB.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color:white;
+}
+
+.bgimage h1 {
+	color:white;
+	text-align: center!important;
+		align-content: center!important;
+	justify-content: center!important;
+	font-family: var(--serif);
+	padding-top: 65vh;
+font-weight: 100;
+		font-size: 10vw!important;
+	
+	 text-shadow: 4px 4px 8px rgba(0,0,0,.8);
+}
+.bgimage h2 {
+			font-style: italic;
+		font-size: 8vw!important;
+		font-family: var(--serif);
+}
+.btext {
+	padding: 8vh 40px!important;
+	color: #333333;
+
+}
+@media screen and (max-width: 992px){
+	.btext{
+		font-size:.75em;
+	}
+	.bgimage{
+			font-size: 10vw!important;
+
+	}
+}
+.sub{
+	margin: 0px !important;
+	padding: 0px!important;
+}
+.sub img{
+	margin: 0px !important;
+  width:100%;
+  height:100%;
+	padding: 0px!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color:white;
+	object-fit:fill;
+}
+.sub row{
+	width: 100%;
+	height: 100%;
+}
+.sub h2{
+	padding-left: 10%;
+	margin-top: 30%;	
+	margin-bottom: 3%;
+
+	width: 60vw; 
+	font-size: 4vw!important;
+
+}
+.sub svg{
+	margin-left: 0px !important;
+	width:40%!important;
+}
+.sub .subbtn{
+margin-left: 45vw;
+}
+.storiesbtn {
+	border-radius: 100px;
+	background: #c16227;
+	padding:20px 30px;
+}
+
+.footer{
+	height: 15%;
+	font-size: 3em;
+		background: #c16227;
+
+
+}
+.footer a {
+	width: 100%;
+	height: auto;
+	font-size: 2vw;
+	text-align: center;
+		color: white!important;
+}
+h3 {
+		font-size: 3em;
+
+	font-family: var(--serif);
+}
+
+.bstories1 {
+	
+	background:#d19449;
+
+}
+.bstories2 {
+	
+	background:#716b4c;
+
+}
+.bstories3 {
+	
+	background:#184950;
+
+}
+.bstories {
+	color: #fff;
+	width: auto;
+	height:auto;
+	padding: 0px!important;
+}
+.bstories h3{
+	font-size: 4em;
+}
+.bstories p{
+		font-size: 2em;
+}
+.bstories img{
+	height: 100%;
+	object-fit:cover;
+}
+.bstoriestext {
+	margin-top: 30px;
+}
+.bstories a {
+	font-size: 3em;
+	color: white!important;
+font-style: italic;
+	font-weight: 400;
+
+}
+.bstories i {
+	height: 1em;
+}
+@media screen and (max-width: 992px){
+.bstories {
+	color: #fff;
+	width: auto;
+	height:auto;
+}
+.bstoriestext {
+	text-align: center;
+	margin: 0!important;
+	padding-top:15px!important;
+	padding-bottom: 40px!important;
+}
+	.bstories h3{
+		font-size: 2em;
+	}
+	.bstories p{
+		font-size: 1em;
+		padding:0 40px;
+	}
+.bstories a {
+	font-size: 2em;
+	color: white!important;
+font-style: italic;
+	font-weight: 400;
+
+}
+.bstories i {
+	height: 1em;
+}
+	.footer{
+		height: 10%!important;
+	}
+	.footer a{
+		font-size:20px!important;
+	}
+}
