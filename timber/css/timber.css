@@ -526,7 +526,7 @@ blockquote {
     /* margin: 0; */
 }
 
-.descCol:first-of-type {
+.descCol.border {
     border-right: solid 2px var(--TColor-2);
 }
 
