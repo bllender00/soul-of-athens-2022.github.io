@@ -134,7 +134,7 @@ a {
 /* TIMBER HOME */
 /* NAVBAR */
 header {
-    background-color: var(--TColor-1) !important;
+    background-color: transparent !important;
     color: var(--bodyColor) !important;
 }
 
@@ -170,7 +170,7 @@ header a {
     position: fixed;
     top: 0;
     z-index: 1;
-    background: hsl(25, 13%, 63%) !important;
+    background: hsla(25, 13%, 63%, 0.7) !important;
     transition: all 0.4s ease-in-out;
     mix-blend-mode: screen 80%;
 }
@@ -463,6 +463,12 @@ blockquote {
 .ytCont iframe {
     width: 100%;
     height: inherit;
+}
+
+.imgBlock .ytCont {
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -785,12 +791,20 @@ blockquote {
         height: 60vh;
     }
 
+    .imgBlock .ytCont {
+        height: 60vh;
+        margin: 1em auto;
+    }
+
     .T_section.imgGraf .ytCont {
         width: 100%;
         height: 60vh;
     }
 
-
+    .audioCont {
+        width: 100%;
+        margin: 0;
+    }
     
 }
 
@@ -934,11 +948,6 @@ blockquote {
 
     .slideshow-container {
         width: 100%;
-    }
-
-    .audioCont {
-        width: 100%;
-        margin: 0;
     }
 
     .audioCont.alone {
