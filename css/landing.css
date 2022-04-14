@@ -233,11 +233,11 @@ header {
 }
 
 /* INTRO */
-#introCont {
-    /* background-color: red; */
-    /*border-top: solid 2px var(--SOA-color6);
-    border-bottom: solid 2px var(--SOA-color6);*/
-}
+/* #introCont {
+    background-color: red;
+    border-top: solid 2px var(--SOA-color6);
+    border-bottom: solid 2px var(--SOA-color6);
+} */
 
 #introCont > * {
     width: 50%;
@@ -265,8 +265,8 @@ header {
 .panel {
     display: flex;
     width: 100vw;
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
     flex-direction: column;
     justify-content: center;
     background: no-repeat center;
@@ -431,6 +431,9 @@ header {
     .panel {
         width: 80vw;
         padding: 3.5vh 0;
+        border: none;
+        border-top: solid 2px white;
+        border-bottom: solid 2px white;
         background: no-repeat center;
         background-size: 130vw;
         text-align: left;

@@ -302,7 +302,8 @@ a.currentSection {
 .panel {
     display: flex;
     width: 100vw;
-    border: solid 2px white;
+    border-left: solid 2px #EEEAE8;
+    border-right: solid 2px #EEEAE8;
     flex-direction: column;
     justify-content: center;
     background: no-repeat center;
@@ -339,7 +340,8 @@ a.currentSection {
     color: white;
     text-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.7);
     transition: all 0.6s ease-in-out;
-    backdrop-filter: blur(6px);
+    padding: 1em 0;
+    backdrop-filter: blur(2px);
 }
 
 .cardText:hover,
@@ -599,7 +601,7 @@ blockquote {
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: clamp(0.75rem, 0.68rem + 0.36vw, 1.00rem);
+    font-size: 1rem;
     font-family: var(--serif);
     font-weight: 700;
     padding: 0.6em;
@@ -766,6 +768,7 @@ blockquote {
     }
 
     #panelCont {
+        height: initial;
         width: 90vw;
     }
 
@@ -832,15 +835,18 @@ blockquote {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 10vh auto;
         padding: 0;
     }
     
     .panel {
         width: 80vw;
         padding: 5vh 0;
+        border: none;
+        border-top: solid 2px #EEEAE8;
+        border-bottom: solid 2px #EEEAE8;
         background: no-repeat center;
-        background-size: 100vw;
+        background-size: 110vw;
         text-align: left;
     }
     
@@ -858,7 +864,7 @@ blockquote {
     
     .cardText > * {
         width: 70%;
-        padding: 0;
+        padding: 0.25em 0;
         margin: 0 0 0 8vw;
     }
     
@@ -929,9 +935,23 @@ blockquote {
     .title h1 {
         width: 100%;
     }
-    
+
+    #panelCont {
+        width: 100%;
+    }
+
     .panel {
-        padding: 1.5vh 0;
+        width: 100%;
+    }
+
+    .panel:hover, 
+    .panel:active {
+        background-size: 120vw;
+        width: 100vw;
+    }
+
+    .panel:after {
+        transform: translate(85vw, 0em);
     }
 
     .img_center {
