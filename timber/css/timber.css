@@ -100,7 +100,8 @@ a {
 }
 
 .img_center {
-    width: 70%;
+    /* width: 70%; */
+    width: 60%;
     margin: 1em auto;
 }
 
@@ -121,7 +122,8 @@ a {
 }
 
 .img_split {
-    width: 85%;
+    /* width: 85%; */
+    width: 60%;
     display: flex;
     margin: 1em auto;
     justify-content: space-between;
@@ -200,7 +202,6 @@ a.currentSection {
 #hero .title {
     position: absolute;
     width: inherit;
-    top: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,6 +210,14 @@ a.currentSection {
     text-align: center;
     text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.8);
     transition: all 0.4s ease-out;
+}
+
+.title.single {
+    top: 25vh;
+}
+
+.title.double {
+    top: 15vh;
 }
 
 .title.sub {
@@ -229,7 +238,7 @@ a.currentSection {
 
 .title h1 {
     font-size: clamp(4.50rem, calc(3.11rem + 6.96vw), 9.38rem);
-    line-height: 1.15em;
+    line-height: 1em;
     width: 80%;
     color: white;
     /* background-color: red; */
@@ -391,14 +400,14 @@ div.last,
 
 /* HISTORY */
 .T_section {
-    width: 70%;
+    width: 60%;
     margin: 2em auto;
     display: flex;
     align-items: center;
 }
 
 .T_section p {
-    width: 90%;
+    width: 100%;
     margin: 0.5em auto;
 }
 
@@ -415,6 +424,7 @@ div.last,
 
 .T_section.grafs {
     align-items: flex-start;
+    /* width: 63%; */
 }
 
 .T_section.grafs p {
@@ -423,10 +433,7 @@ div.last,
 
 
 
-.slideshow-container {
-    width: 70%;
-    margin: 1em auto;
-}
+
 
 blockquote {
     width: 50%;
@@ -447,7 +454,7 @@ blockquote {
 }
 
 .audioCont.alone {
-    width: 70%;
+    width: 60%;
     margin: 10vh auto;
 }
 
@@ -457,7 +464,7 @@ blockquote {
 }
 
 .ytCont {
-    width: 70%;
+    width: 60%;
     height: 80vh;
     margin: 20vh auto;
 }
@@ -478,6 +485,11 @@ blockquote {
 .industry {
     display: flex;
     justify-content: center;
+}
+
+.industry.border {
+    padding-top: 15vh;
+    border-top: 2px solid var(--TColor-2);
 }
 
 .CI_desc {
@@ -555,10 +567,9 @@ blockquote {
 
 /* CAROUSEL */
 .slideshow-container {
-    max-width: 100%;
-    margin: 0 auto;
+    width: 55%;
+    margin: 1em auto;
     position: relative;
-    background-color: var(--CColor-4);
 }
 
 /* Hide the images by default */
@@ -748,6 +759,10 @@ blockquote {
     .T_section.grafs p {
         width: 70%;
     }
+
+    .slideshow-container {
+        width: 65%;
+    }
     
     
     blockquote {
@@ -886,7 +901,7 @@ blockquote {
     }
 
     .slideshow-container {
-        width: 90%;
+        width: 100%;
     }
 }
 
