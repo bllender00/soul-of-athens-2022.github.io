@@ -452,6 +452,7 @@ blockquote {
 .audioCaption {
     font-family: var(--serif);
     line-height: 1.5em;
+    color: #535353;
 }
 
 .ytCont {
@@ -730,10 +731,13 @@ blockquote {
     margin: 0.5em 0 !important;
     line-height: 1.25em !important;
     font-weight: 100;
+    font-family: var(--serif);
+    color: #535353;
 }
 
 .imgBlock p.photog {
-    font-weight: 300 !important;
+    font-weight: 600 !important;
+    color: var(--TColor-2);
 }
 
 @media screen and (max-width: 1440px) {

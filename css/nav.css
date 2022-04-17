@@ -21,7 +21,7 @@ header {
 }
 
 .logo img {
-    width: 3.5em;
+    width: 3em;
     padding: 0.25em 0;
 }
 
@@ -108,7 +108,7 @@ header a {
 .btn {
     cursor: pointer;
     display: block;
-    font-size: clamp(2.00rem, calc(1.66rem + 1.70vw), 4.38rem);
+    font-size: clamp(2.00rem, calc(1.75rem + 1.25vw), 3.75rem);
 }
 
 .sticky {
