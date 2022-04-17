@@ -6,7 +6,7 @@ header {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    padding: 0em 5%;
+    padding: 0 5%;
     align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
     font-size: clamp(1.25rem, calc(0.98rem + 1.34vw), 3.13rem);
@@ -21,7 +21,8 @@ header {
 }
 
 .logo img {
-    width: 5.5vw;
+    width: 3.5em;
+    padding: 0.25em 0;
 }
 
 .resourceHome {
@@ -64,6 +65,7 @@ header a {
     padding: 1em 10vw;
     transition: all 0.3s ease-in-out;
     background-color: inherit;
+    font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);;
 }
 
 .menu a:hover,
@@ -73,7 +75,8 @@ header a {
 }
 
 .menu-btn {
-    padding: 1em;
+    padding: 0.5em;
+    /* margin-right: 1em; */
     transition: all 0.4s ease-in-out;
     text-shadow: 2px 2px 10px #171717;
 }
@@ -88,7 +91,9 @@ header a {
     position: absolute;
     top: 0;
     right: 5.5vw;
-    padding: 1em;
+    padding: 0.5em;
+    /* margin-right: 1em; */
+    margin-top: 0.25em;
 }
 
 .close-btn:hover,
@@ -103,7 +108,7 @@ header a {
 .btn {
     cursor: pointer;
     display: block;
-    font-size: clamp(2.00rem, calc(1.57rem + 2.14vw), 5.00rem);
+    font-size: clamp(2.00rem, calc(1.66rem + 1.70vw), 4.38rem);
 }
 
 .sticky {
@@ -160,7 +165,6 @@ a.currentSection {
     display: flex;
     margin: 0 auto;
     width: 80vw;
-    font-size: clamp(1.25rem, calc(1.21rem + 0.18vw), 1.38rem);
 }
 
 .footerInside a {
@@ -203,9 +207,6 @@ a.currentSection {
 }
 
 @media (max-width: 1080px) {
-    .logo img {
-        width: 7vw;
-    }
 
     .footerInside {
         width: 95vw;
@@ -218,9 +219,6 @@ a.currentSection {
 }
 
 @media screen and (max-width: 800px) {
-    .logo img {
-        width: 8vw;
-    }
 
     .footerInside {
         width: 90vw;
@@ -241,9 +239,7 @@ a.currentSection {
 @media screen and (max-width: 768px) {
     
     
-    .logo img {
-        width: 10vw;
-    }
+    
 
 }
 
@@ -280,9 +276,7 @@ a.currentSection {
        margin-right: 0.75em;
     }
     
-    .logo img {
-        width: 15vw;
-    }
+    
 
     .footerLogo {
         padding: 2em 0.5em 0.5em;
@@ -291,5 +285,15 @@ a.currentSection {
 
     .footerLogo img {
         width: 40vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+    
+    .logo img {
+        width: 4.5em;
     }
 }

@@ -8,7 +8,7 @@
     <meta name="author" content="Taylor Johnston | taylorfjohnston@gmail.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timber in Appalachia</title>
-    <meta name="twitter:title" content="A Long Road" /> <!-- The webhed -->
+    <meta name="twitter:title" content="From the Ground" /> <!-- The webhed -->
     <meta name="twitter:image:src" content="https://raw.githubusercontent.com/johnstont05/soul-of-athens-medical-access-2020/master/images/preview.jpg" /> <!-- the img URL -->
     <meta property="og:image" content="https://raw.githubusercontent.com/johnstont05/soul-of-athens-medical-access-2020/master/images/preview.jpg" /> <!-- The img URL -->
 
@@ -94,7 +94,7 @@
   <p>For thousands upon thousands of years, the rolling hills of southeast Ohio were carpeted in thick, seemingly endless forest. In fact, nearly the entirety of the state was covered in old growth forest. That is, until the late 1700s. As European settlers swept into the state and forcefully removed indigenous peoples that had populated the area for generations, Ohio’s forests began to feel the pressure of colonization and settlement as well. </p>
   
   <div class="imgBlock img_center infograph">
-    <img src="images/infographics/infographics_v007-02.png" alt="describe">
+    <img src="images/infographics/infographics_v009-02.png" alt="describe">
     <!-- <p class="photog">PhotographerName</p> -->
     <p class="caption">Decribe photo here Decribe photo here Decribe photo here Decribe photo here Decribe photo here </p>
   </div>
@@ -245,17 +245,12 @@
   function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var slides2 = document.getElementsByClassName("mySlides2");
+  
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  if (n > slides2.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides2.length}
-  for (i = 0; i < slides2.length; i++) {
-      slides2[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");

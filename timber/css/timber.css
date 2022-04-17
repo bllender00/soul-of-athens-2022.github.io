@@ -23,7 +23,7 @@
     /* 28-46px */
     --subheadSize: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.25rem);
     /* 40-72px */
-    --bodySize: clamp(1.00rem, calc(0.77rem + 1.16vw), 2.63rem);
+    --bodySize: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);
     /* 18-20px */
   }
 
@@ -241,7 +241,7 @@ a.currentSection {
 }
 
 .title h1 {
-    font-size: clamp(3.75rem, calc(1.16rem + 12.95vw), 21.88rem);
+    font-size: clamp(2.75rem, calc(2.14rem + 8.04vw), 15.00rem);
     line-height: 1em;
     width: 80%;
     color: white;
@@ -263,7 +263,7 @@ a.currentSection {
     width: 70vw;
     margin-top: 0.5em;
     line-height: 1.25em;
-    font-size: clamp(1.50rem, calc(1.00rem + 2.50vw), 5.00rem);
+    font-size: clamp(1.50rem, calc(1.09rem + 2.05vw), 4.38rem);
     font-weight: 900;
     color: white;
 }
@@ -341,7 +341,7 @@ a.currentSection {
     flex-direction: column;
     transform: translate(18vw, 3em);
     position: absolute;
-    font-size: clamp(6.25rem, calc(1.39rem + 3.04vw), 2.00rem);
+    font-size: clamp(2.00rem, calc(1.39rem + 3.04vw), 6.25rem);
     transition: all 0.4s ease-in-out;
 }
 
@@ -415,11 +415,11 @@ div.last,
 
 .T_section.grafs {
     align-items: flex-start;
-    /* width: 63%; */
+    width: 62%;
 }
 
 .T_section.grafs p {
-    width: 46%;
+    width: 47%;
 }
 
 
@@ -523,13 +523,13 @@ blockquote {
     line-height: 0.9em;
     margin-top: 1em;
     color: var(--TColor-3);
-    font-size:  clamp(2.00rem, calc(1.75rem + 1.25vw), 3.75rem);
+    font-size:  clamp(2.00rem, calc(1.84rem + 0.80vw), 3.13rem);
 }
 
 .descCol h4 {
     line-height: 0.9em;
     color: var(--TColor-2);
-    font-size: clamp(1.63rem, calc(1.43rem + 0.98vw), 3.00rem);
+    font-size: clamp(1.63rem, calc(1.50rem + 0.63vw), 2.50rem);
 }
 
 .descCol p:not(:last-child) {

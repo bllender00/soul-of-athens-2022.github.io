@@ -19,13 +19,13 @@
 
     --h1Size: clamp(2.50rem, calc(1.93rem + 2.86vw), 4.50rem); 
     /* 40-72px */
-    --h2Size: clamp(2.00rem, calc(1.57rem + 2.14vw), 3.50rem);
+    --h2Size:clamp(2.00rem, calc(1.57rem + 2.14vw), 5.00rem);
     /* 32-56px */
     --h3Size: clamp(1.63rem, calc(1.27rem + 1.79vw), 2.88rem);
     /* 28-46px */
     --subheadSize: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.25rem);
     /* 40-72px */
-    --bodySize: clamp(1.13rem, calc(1.09rem + 0.18vw), 1.25rem);
+    --bodySize: clamp(1.00rem, calc(0.77rem + 1.16vw), 2.63rem);
     /* 18-20px */
   }
 
@@ -291,7 +291,7 @@ header {
     flex-direction: column;
     transform: translate(12vw, 3em);
     position: absolute;
-    font-size: clamp(2.00rem, calc(1.57rem + 2.14vw), 3.50rem);
+    font-size: clamp(6.25rem, calc(1.39rem + 3.04vw), 2.00rem);
     transition: all 0.4s ease-in-out;
 }
 
@@ -335,58 +335,21 @@ header {
     border-bottom: solid 2px var(--SOA-color6);*/
 }
 
-/* FOOTER */
 #footer {
-    background-color: var(--SOA-color6);
-    height: 50vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 5vh 0;
+    background-color: black !important;
+    color: var(--bodyColor) !important;
 }
 
 #footer a {
-    color: white;
+    color: white !important;
 }
 
 .footerInside {
-    display: flex;
-    margin: 0 auto;
-    width: 80vw;
-    font-size: clamp(1.25rem, calc(1.21rem + 0.18vw), 1.38rem);
-}
-
-.footerInside a {
-    cursor: pointer;
-    line-height: 1.25em;
-}
-
-.footerInside a:hover,
-.footerInside a:active {
-    text-decoration: underline;
-}
-
-.footerLogo {
-    padding: 1em 0.5em;
-    margin: 0 1em;
-}
-
-.footerLogo img {
-    width: 15vw;
+    font-size: var(--bodySize);
 }
 
 .footerlinks {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.5em;
-    width: 100%;
-    align-items: center;
-}
-
-.footerlinks a {
-    padding: 0.5em;
+    font-size: var(--bodySize);
 }
 
 .pastlinks {
@@ -457,18 +420,6 @@ header {
         margin: 0 0 0 15vw;
     }
     
-    #footer {
-        height: 45vh;
-    }
-
-    .footerInside {
-        width: 95vw;
-    }
-
-    .footerLogo {
-        margin: 0 0 0 1em;
-        padding: 1em 0;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -482,25 +433,6 @@ header {
 
     .cardText > * {
         margin: 0 0 0 10vw;
-    }
-
-    #footer {
-        height: 60vh;
-    }
-
-    .footerInside {
-        width: 90vw;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .footerLogo {
-        padding: 0.5em;
-        margin: 0.5em auto 0;
-    }
-
-    .footerLogo img {
-        width: 25vw;
     }
 }
 
@@ -521,26 +453,6 @@ header {
 
     #introCont > * {
         width: 80%;
-    }
-
-    #footer {
-        height: 90vh;
-        padding: 10vh 0 0;
-    }
-
-    .footerlinks {
-        flex-direction: column;
-        width: 50vw;
-        height: 25vh;
-    }
-
-    .footerlinks a {
-        margin: 0.25em 0;
-    }
-
-    .footerLogo {
-        padding: 1.5em 0.5em 0.5em;
-        margin: 1em auto 0;
     }
 }
 
@@ -582,15 +494,6 @@ header {
     .panel:after {
         transform: translate(80vw, 0em);
     }
-
-    #footer {
-        height: 95vh;
-        padding: 10vh 0 0;
-    }
-
-    .footerLogo img {
-        width: 40vw;
-    }
 }
 
 @media screen and (max-width: 425px) {
@@ -605,11 +508,6 @@ header {
 
     #hero img {
         height: 80vh;
-    }
-
-    #footer {
-        height: 100vh;
-        padding: 20vh 0 10vh;
     }
 }
 
