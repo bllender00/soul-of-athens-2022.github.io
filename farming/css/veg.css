@@ -583,17 +583,8 @@ mark{
     text-align: center;
 }
 
-.photo-bg{
-    background-image:url("assets/img/hay/Farming_Chase_20220308_009_draft1%20(1).JPG");
-    min-height: 87vh;
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .photo-bg-static1{
-    background-image:url("assets/img/veg/11.JPG");
+    background-image:url("assets/img/veg/11.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
