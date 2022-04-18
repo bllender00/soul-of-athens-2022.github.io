@@ -183,7 +183,7 @@ a.currentSection {
 }
 
 .footerLogo img {
-    width: 15vw;
+    width: 20vw;
 }
 
 .footerlinks {
@@ -232,7 +232,7 @@ a.currentSection {
     }
 
     .footerLogo img {
-        width: 25vw;
+        width: 40vw;
     }
 }
 
@@ -272,28 +272,24 @@ a.currentSection {
 }
 
 @media screen and (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+
     .logo {
-       margin-right: 0.75em;
+        margin-right: 0.75em;
+     }
+    
+    .logo img {
+        width: 4.5em;
     }
     
-    
-
     .footerLogo {
-        padding: 2em 0.5em 0.5em;
+        padding: 0em 0.5em 0.5em;
         margin: 1em auto 0;
     }
 
     .footerLogo img {
-        width: 40vw;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        justify-content: center;
-    }
-    
-    .logo img {
-        width: 4.5em;
+        width: 70vw;
     }
 }

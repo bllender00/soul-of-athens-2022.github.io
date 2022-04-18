@@ -25,7 +25,7 @@
     /* 28-46px */
     --subheadSize: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.25rem);
     /* 40-72px */
-    --bodySize: clamp(1.00rem, calc(0.77rem + 1.16vw), 2.63rem);
+    --bodySize: clamp(1.00rem, calc(0.88rem + 0.63vw), 1.88rem);
     /* 18-20px */
   }
 
@@ -137,9 +137,6 @@ a {
 
 
 /* NAVBAR */
-header {
-    background-color: hsla(0, 0%, 0%, 0.7) !important;
-}
 
 .menu {
     background-color: rgb(50, 50, 50) !important;
@@ -291,7 +288,7 @@ header {
     flex-direction: column;
     transform: translate(12vw, 3em);
     position: absolute;
-    font-size: clamp(6.25rem, calc(1.39rem + 3.04vw), 2.00rem);
+    font-size: clamp(2.00rem, calc(1.39rem + 3.04vw), 6.25rem);
     transition: all 0.4s ease-in-out;
 }
 
@@ -321,6 +318,7 @@ header {
 .cardText p {
     line-height: 1.5em;
     font-weight: 500;
+    font-size: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.69rem);
 }
 
 .cardText h2 {
@@ -501,13 +499,10 @@ header {
         width: 100%;
         /* background-color: red; */
     }
-    
-    #hero {
-        top: 20vh;
-    }
 
     #hero img {
-        height: 80vh;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
