@@ -127,10 +127,12 @@ header a {
     right: 0;
 }
 
-.btn1 {
+.btn {
     cursor: pointer;
     display: inline-block!important;
-    font-size: clamp(2.00rem, calc(1.75rem + 1.25vw), 3.75rem)!important;
+    font-size: clamp(.00rem, calc(1.75rem + 1.25vw), 3.75rem) !important;
+    padding: 0;
+    color: white;
 }
 
 .sticky {
