@@ -581,7 +581,7 @@ p {
     font-weight: 500;
     font-size: 3rem;
     padding-left: 0;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 
@@ -752,6 +752,10 @@ footer {
         font-size: 5rem;
         margin-left: 2rem;
     }
+
+    .hero_caption {
+        margin-top: 1em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -766,7 +770,7 @@ footer {
     }
 
     #hero .title .hero_headline {
-        font-size: 4rem;
+        font-size: 2.5rem;
         margin-left: 2rem;
     }
 
@@ -801,11 +805,6 @@ footer {
     .main-body-margin {
         margin-right: 0%;
         margin-left: 0%;
-    }
-
-    #hero .title .hero_headline {
-        font-size: 3rem;
-        margin-left: 2rem;
     }
 }
 
@@ -842,6 +841,14 @@ footer {
     .main-body-margin {
         margin-right: 0%;
         margin-left: 0%;
+    }
+
+    #hero .story .hero_caption {
+        margin-top: 1.5em;
+    }
+
+    .px-5 {
+        padding: 0 8% !important;
     }
 }
 

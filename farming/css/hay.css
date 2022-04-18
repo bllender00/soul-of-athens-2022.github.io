@@ -781,7 +781,11 @@ footer{
     .main-body-margin{
     margin-right: 0%;
     margin-left: 0%;
-}
+    }
+
+    #hero .story .hero_caption {
+      margin-top: 3em;
+    }
 }
 
 @media screen and (max-width: 374px) {
