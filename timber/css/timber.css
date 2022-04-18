@@ -422,6 +422,13 @@ div.last,
     width: 47%;
 }
 
+.T_section.insta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
 
 
 
@@ -771,6 +778,10 @@ blockquote {
         width: 70%;
     }
 
+    .T_section.insta {
+        width: 40vw;
+    }
+
     .slideshow-container {
         width: 60%;
     }
@@ -903,6 +914,10 @@ blockquote {
 
     .T_section {
         width: 80%;
+    }
+
+    .T_section.insta {
+        width: 80vw;
     }
 
     .slideshow-container {
