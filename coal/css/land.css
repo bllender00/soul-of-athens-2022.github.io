@@ -94,7 +94,133 @@ a {
   opacity: 0.8;
   font-weight: 300;
 }
-
+/* NAVBAR */
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  /* top: 1.75em; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+  background-color: var(--TColor-1);
+  font-size: clamp(1.25rem, calc(1.18rem + 0.36vw), 1.50rem);
+  color: var(--bodyColor);
+  transition: 0.3s;
+  transition-property: top;
+}
+.logo {
+  padding: 1em 0.5em;
+  text-transform: uppercase;
+}
+header a {
+  color: var(--bodyColor);
+}
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-property: right;
+}
+.menu a {
+  padding: 1em 2em;
+  transition: all 0.3s ease-in-out;
+}
+.menu a:hover, .menu a:active {
+  text-decoration: underline;
+  background-color: hsl(50, 20%, 33%);
+}
+.menu-btn {
+  padding: 1em;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn:hover, .menu-btn:active {
+  background-color: hsl(29, 68%, 79%);
+}
+.close-btn {
+  transition: all 0.4s ease-in-out;
+}
+.close-btn:hover, .close-btn:active {
+  background-color: hsl(50, 20%, 30%);
+}
+.btn {
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 5em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: rgba(193, 98, 39, 0.8);
+  transition: all 0.4s ease-in-out;
+  mix-blend-mode: screen 80%;
+}
+.sticky:hover, .sticky:active {
+  background-color: var(--TColor-1);
+  mix-blend-mode: normal;
+}
+.current {
+  text-decoration: underline;
+  background-color: hsl(50, 20%, 30%);
+  ;
+}
+/* SUBLINKS */
+.sublinks {
+  display: none;
+}
+@media (max-width: 2000px) {
+  header {
+    padding: 0em 5%;
+  }
+  .btn {}
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--TColor-3);
+    color: white;
+    min-width: 35vw;
+    height: 100vh;
+    overflow: hidden;
+    /* top: inherit; */
+    top: 0;
+    right: -105%;
+    /* opacity: 0.7; */
+  }
+  .menu a {
+    min-width: 40vw;
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 5.5vw;
+    padding: 1em;
+    /* background-color: red; */
+  }
+  /* SUBLINKS */
+  .sublinks {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(50, 20%, 47%);
+    ;
+  }
+}
+@media screen and (max-width: 768px) {
+  #breadcrumbs {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu {
     min-width: 100vw;
@@ -341,25 +467,25 @@ h3 {
 }
 .bstories1img {
   background: url("../images/land/Landing/History_profilepic.jpg");
-  width: 33vw;
+  width: 33%vw;
   background-size: cover;
   background-position: top;
 }
 .bstories2img {
   background: url("../images/land/Landing/Talcon_profilepic.jpg");
-  width: 33vw;
+  width: 33%vw;
   background-size: cover;
   background-position: top;
 }
 .bstories3img {
   background: url("../images/land/Landing/Rick_profilepic.jpg");
-  width: 33vw !important;
+  width: 33%vw !important;
   background-size: cover;
   background-position: left;
 }
 .bstories4img {
   background: url("../images/land/Landing/Landing_hero.jpg");
-  width: 33vw !important;
+  width: 33%vw !important;
   background-size: cover;
   background-position: left;
 }

@@ -89,29 +89,13 @@ a:hover {
     align-content: center !important;
     justify-content: center !important;
   }
-  /* .bgimage {
-  } */
+  .bgimage {
+  }
 
 }
 
-header {
-  width: 100% !important;
-  padding: 0 !important;
-}
 
-header .btn {
-  color: white !important;
-}
 
-/* .row {
-  background-color: red !important;
-} */
-
-.row.rowEdit {
-  /* background-color: yellow !important; */
-  width: 98vw !important;
-  margin: 0 auto;
-}
 
 .bgimage {
   width: 100%;
@@ -167,8 +151,8 @@ header .btn {
 .ttextmore {
   padding-top: 10vh !important;
 }
-/* .stext p{
-} */
+.stext p{
+}
 .ttextmore h1 {
   font-size: 5em;
   font-weight: 800;
@@ -270,25 +254,25 @@ h3 {
 }
 .bstories1img {
   background: url("../images/land/Landing/History_profilepic.jpg");
-  width: 33%;
+  width: 33%vw;
   background-size: cover;
   background-position: top;
 }
 .bstories2img {
   background: url("../images/land/Landing/Talcon_profilepic.jpg");
-  width: 33%;
+  width: 33%vw;
   background-size: cover;
   background-position: top;
 }
 .bstories3img {
   background: url("../images/land/Landing/Rick_profilepic.jpg");
-  width: 33% !important;
+  width: 33%vw !important;
   background-size: cover;
   background-position: left;
 }
 .bstories4img {
   background: url("../images/land/Landing/Landing_hero.jpg");
-  width: 33% !important;
+  width: 33%vw !important;
   background-size: cover;
   background-position: left;
 }
@@ -353,10 +337,6 @@ h3 {
   .footer a {
     font-size: 20px !important;
   }
-}
-
-.footerlinks {
-  font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);;
 }
 .btn-land {
   padding: 15px 50px !important;
@@ -557,7 +537,7 @@ float: right
 
 .underline-pq3 {
   border-bottom: .5vw solid #ba9c49;
-  /* display: inline-block;	 */
+display: inline-block;	
   width: 45vw;
 	float:right;
 	margin-top: 0vh!important;
@@ -574,10 +554,8 @@ float: right
 
 }
 .pullquote3 h1 {
-  font-size:4vw !important;  
-  /* display: inline-block !important; */
-	font-weight: 600; 
-  float: right;
+  font-size:4vw !important;  display: inline-block !important;
+	font-weight: 600; float: right;
 	padding-left: 45vw;
 
 }
@@ -665,7 +643,17 @@ float: right
     width: 100% !important;	 
 	   
 
-  }.underline-pq2 {
+  }
+	
+	
+	.quotecredit-r{
+
+		padding:0!important;
+		margin: 0 5vw 0 0!important;
+
+}
+	
+	.underline-pq2 {
   border-bottom: 1vw solid #ba9c49;
 display: inline-block;	
   width: 45vw;
@@ -747,7 +735,10 @@ font-size: 6vw!important;
 font-size: 6vw!important; padding-left: 6vw!important;
 }
 }
+.quotecredit-r{
+  margin-left:45vw;
 
+}
 
 .img-story{
 	margin-top: 18vh;

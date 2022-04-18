@@ -558,7 +558,7 @@ p {
 #hero .title .hero_headline {
     font-family: var(--sans);
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 5rem;
     padding-left: 0;
     margin-left: 4rem;
 }
@@ -581,7 +581,7 @@ p {
     font-weight: 500;
     font-size: 3rem;
     padding-left: 0;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 
@@ -749,12 +749,13 @@ footer {
     }
 
     #hero .title .hero_headline {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-left: 2rem;
     }
 
-    .hero_caption {
-        margin-top: 1em;
+    #hero .story .hero_caption {
+        margin-top: 0.5em;
+        margin-left: 0.75em;
     }
 }
 
@@ -845,6 +846,7 @@ footer {
 
     #hero .story .hero_caption {
         margin-top: 1.5em;
+        margin-left: 0.6em;
     }
 
     .px-5 {
