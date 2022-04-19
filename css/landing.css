@@ -270,6 +270,7 @@ a {
     text-align: center;
     filter: grayscale(1);
     transition: all 0.6s ease-in-out;
+    height: 70vh;
 }
 
 .panel:hover, 
@@ -285,7 +286,7 @@ a {
     color: transparent;
     display: flex;
     flex-direction: column;
-    transform: translate(12vw, 3em);
+    transform: translate(12vw, 2.5em);
     position: absolute;
     font-size: clamp(2.00rem, calc(1.39rem + 3.04vw), 6.25rem);
     transition: all 0.4s ease-in-out;
@@ -471,6 +472,7 @@ a {
         background: no-repeat center;
         background-size: 130vw;
         text-align: left;
+        height: initial;
     }
     
     .panel:hover, 
@@ -541,7 +543,7 @@ a {
     } 
 
     .panel:after {
-        transform: translate(65vw, 0em);
+        transform: translate(70vw, 0em);
     }
 
     .cardText > * {
@@ -630,7 +632,7 @@ a {
     }
 
     .panel:after {
-        transform: translate(80vw, 0em);
+        transform: translate(85vw, 0em);
     }
 
     #creditsCont {
