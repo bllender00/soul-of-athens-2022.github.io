@@ -462,6 +462,11 @@ p{
     justify-content: center;
     filter: brightness(50%);
 }
+
+.hero-position{
+    background-position:left;
+}
+
 #hero svg {
     filter: invert(1) opacity(0.8);
     transform: translateY(-25vh);
