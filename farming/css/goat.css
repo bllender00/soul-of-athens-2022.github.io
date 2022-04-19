@@ -666,6 +666,15 @@ mark {
     background-size: cover;
 }
 
+.photo-bg-static3 {
+    background-image: url("assets/img/goat/pawpaw.jpg");
+    height: 87vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .photo-bg-static-caption {
     color: white;
     position: absolute;
@@ -780,6 +789,10 @@ footer {
     }
 
     .photo-bg-static2 {
+        height: 43vh;
+    }
+
+    .photo-bg-static3 {
         height: 43vh;
     }
 
