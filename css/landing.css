@@ -370,12 +370,14 @@ a {
 .memberName {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     padding-right: 1em;
+    
 }
 
 .memberName > * {
     margin: 0.5em auto;
+    margin-left: 2vw;
 }
 
 .memberName a {
@@ -520,7 +522,6 @@ a {
     
     .memberName {
         width: 70%;
-        align-items: center;
         padding-right: 0;
     }
     
