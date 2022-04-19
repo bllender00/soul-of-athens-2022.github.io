@@ -619,6 +619,14 @@ blockquote {
     line-height: 1.25em;
 }
 
+.textBelow {
+    padding: 0.5 0.8em 1em;
+    width: inherit;
+    position: relative;
+    background: hsl(0, 0%, 10%);
+    line-height: 1.25em;
+}
+
 .text a {
     font-weight: 700;
     text-decoration: underline;
