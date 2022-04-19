@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+	
 <!-- Required meta tags -->
 <meta charset="UTF-8">
 <meta name="description" content="">
@@ -73,28 +74,29 @@
     <a href="index.html" class="resourceHome">Conserving Coal</a>
   </div>
   <div class="menu">
-    <div class="btn">
+    <div class="btn1">
       <i class="fa fa-xmark close-btn"></i>
     </div>
     <a href="../natural-land/index.html" class="navLink1">Natural Land</a>
-    <a href="../coal/index.html" class="navLink2 currentSection current">Coal</a>
-    <div class="sublinks">
+    <a href="#coal" class="navLink2  currentSection current">Coal</a>    
+	    <div class="sublinks">
       <a href="#bottle">History in a bottle</a>
       <a href="#mine">Pride in Little Cities</a>
       <a href="#theatre">Tecumseh Theater</a>
 		      <a href="#school">Perry County</a>
       <a href="#last">Westmoreland</a>
-    </div>
-    <a href="../timber/index.html" class="navLink3">Timber</a>
+
+	  </div>
+    <a href="../timber/index.html" class="navLink6">Timber</a>
+
     <a href="../clay/index.html" class="navLink4">Clay</a>
     <a href="../farming/index.html" class="navLink5">Farming</a>
   </div>
 
-  <div class="btn">
+  <div class="btn1">
     <i class="fa fa-bars menu-btn"></i>
   </div>
 </header>
-
 
 <!-- HERO -->
 <section class="container-fluid bgimage " id="coal">
@@ -178,7 +180,7 @@ Coal is widespread in Southeast Ohio. Mined and unmined, the history of coal is 
 
 
 		<section class="container-fluid d-flex img-story" id="bottle"  data-aos="fade-in">
-  <div class="row rowEdit"> <img src="images/coal/landing page/landing9.jpg" alt=" Cam Blosser holds up a bottle full of soda from the early 1900s preserved due to a broken of cork. Cam found the bottle in the creek behind his home in New Straightsville. Talking to “old timers” in the area, Cam learned that before refrigerators, bottles of soda like this were put in the creek to cool off. He surmises this one was forgotten in the creek and was washed down stream and buried until he discovered it.  ">
+  <div class="row"> <img src="images/coal/landing page/landing9.jpg" alt=" Cam Blosser holds up a bottle full of soda from the early 1900s preserved due to a broken of cork. Cam found the bottle in the creek behind his home in New Straightsville. Talking to “old timers” in the area, Cam learned that before refrigerators, bottles of soda like this were put in the creek to cool off. He surmises this one was forgotten in the creek and was washed down stream and buried until he discovered it.  ">
     <h6 class="imgcaption-s" > Cam Blosser holds up a bottle full of soda from the early 1900s preserved due to a broken of cork. Cam found the bottle in the creek behind his home in New Straightsville. Talking to “old timers” in the area, Cam learned that before refrigerators, bottles of soda like this were put in the creek to cool off. He surmises this one was forgotten in the creek and was washed down stream and buried until he discovered it.  </h6>
     <span class="underline-s"></span> </div>
 </section>
@@ -658,37 +660,37 @@ AOS.init({
 <!-- BOOTSTRAP --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 <script type="text/javascript">
-  window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle('sticky', window.scrollY > 0);
-  });
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
 
-  var menu = document.querySelector('.menu');
-  var menuBtn = document.querySelector('.menu-btn');
-  var closeBtn = document.querySelector('.close-btn');
-  var subLink1 = document.querySelector('.subLink1');
-  var subLink2 = document.querySelector('.subLink2');
-  var subLink3 = document.querySelector('.subLink3');
-  
-  menuBtn.addEventListener("click", () => {
-    menu.classList.add('active');
-  });
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    var subLink1 = document.querySelector('.subLink1');
+    var subLink2 = document.querySelector('.subLink2');
+    var subLink3 = document.querySelector('.subLink3');
+    
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
 
-  closeBtn.addEventListener("click", () => {
-    menu.classList.remove('active');
-  });
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
 
-  subLink1.addEventListener("click", () => {
-    menu.classList.remove('active');
-  });
-  
-  subLink2.addEventListener("click", () => {
-    menu.classList.remove('active');
-  });
+    subLink1.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    
+    subLink2.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
 
-  subLink3.addEventListener("click", () => {
-    menu.classList.remove('active');
-  });
+    subLink3.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
 </script>
 </body>
 </html>
