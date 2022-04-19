@@ -613,7 +613,7 @@ mark{
 .photo-bg-static{
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-    url('assets/img/hay/photo-bg-static.jpg');
+    url('assets/img/hay/photo-bg-static.JPG');
     position: relative;
     background-position:bottom;
     width: 100%;
