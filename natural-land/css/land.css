@@ -239,6 +239,9 @@ a {
   color: #333333;
   height: auto;
 }
+.stext p {
+font-size: 1.25em!important;
+}
 .ttextmore {
   padding-top: 10vh !important;
 }
@@ -256,6 +259,8 @@ a {
   }
   .stext {
     font-size: .75em;
+	    padding: 2vh 15vw !important;
+
   }
   .bgimage {
     font-size: 10vw !important;
