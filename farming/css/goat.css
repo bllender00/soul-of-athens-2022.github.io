@@ -627,7 +627,7 @@ section {
 }
 
 .pull-quote-bg {
-    background-image: url("assets/img/goat/pull-quote.JPG");
+    background-image: url("assets/img/goat/pull-quote.jpg");
     min-height: 200px;
     background-attachment: fixed;
     background-position: center;
@@ -649,7 +649,7 @@ mark {
 }
 
 .photo-bg-static1 {
-    background-image: url("assets/img/goat/Farming_Chmiel_015_draft1.JPG");
+    background-image: url("assets/img/goat/Farming_Chmiel_015_draft1.jpg");
     height: 87vh;
     width: 100%;
     background-position: top center;
@@ -658,7 +658,7 @@ mark {
 }
 
 .photo-bg-static2 {
-    background-image: url("assets/img/goat/Farming_Chmiel_014_draft1.JPG");
+    background-image: url("assets/img/goat/Farming_Chmiel_014_draft1.jpg");
     height: 87vh;
     width: 100%;
     background-position: center;
@@ -675,7 +675,7 @@ mark {
 .photo-bg-static {
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-        url('assets/img/goat/Farming_Chmiel_007_draft1.JPG');
+        url('assets/img/goat/Farming_Chmiel_007_draft1.jpg');
     position: relative;
     background-position: top right;
     width: 100%;
@@ -786,7 +786,7 @@ footer {
     .photo-bg-static {
         background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-            url('assets/img/goat/Farming_Chmiel_007_draft1.JPG');
+            url('assets/img/goat/Farming_Chmiel_007_draft1.jpg');
     }
 }
 
