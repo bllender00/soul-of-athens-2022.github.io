@@ -4,7 +4,7 @@
     --SOA-color3: hsl(23, 66%, 46%);
     --SOA-color4: hsl(10, 25%, 42%);
     --SOA-color5: hsl(50, 20%, 37%);
-    --SOA-color6: hsl(188, 54%, 20%);
+    --SOA-color6: rgb(23, 71, 79);
     
     --TColor-1: #f2d6bb;
     --TColor-2: #D19449;
@@ -251,7 +251,6 @@ a {
 /* PANELS */
 #panelCont {
     width: 80%;
-    height: 80vh;
     display: flex;
     /*border-top: solid 2px var(--SOA-color6);
     border-bottom: solid 2px var(--SOA-color6);*/
@@ -326,12 +325,87 @@ a {
     font-family: var(--sans);
 }
 
+
+
+
+
+
 /* CREDITS */
 #creditsCont {
-    height: 80vh;
-    /*border-top: solid 2px var(--SOA-color6);
-    border-bottom: solid 2px var(--SOA-color6);*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.creditCard {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 5vh 1vw;
+    border-radius: 1em;
+    border: 2px solid #17474f;
+}
+
+.creditCard img {
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1em;
+}
+
+.creditCard a img {
+    border-radius: 0;
+}
+
+.creditCard h2 {
+    margin: 0;
+    padding: 0.5em 0 0 1.5vw;
+    font-size: 2.8rem;
+}
+
+.memberName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.memberName > * {
+    margin: 0.5em auto;
+}
+
+.memberName a {
+    width: 20px;
+    height: 20px;
+    margin: 0.15em;
+}
+
+.memberName p {
+    font-size: clamp(1.00rem, calc(1.00rem + 0.31vw), 1.50rem);
+}
+
+.memberName p b {
+    font-family: var(--serif);
+    font-style: italic;
+}
+
+.memberName img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 #footer {
     background-color: black !important;
@@ -384,7 +458,6 @@ a {
 
     #panelCont {
         flex-direction: column;
-        height: 100vh;
         margin: 0 auto;
         padding: 5vh 0 10vh;
     }
@@ -420,6 +493,48 @@ a {
     
 }
 
+
+@media screen and (max-width: 915px) {
+    #creditsCont {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .creditCard {
+        width: 60vw;
+        margin: 2.5vh 1vw;
+        align-items: center;
+    }
+    
+    .creditCard img {
+        height: 20em;
+    }
+    
+    .creditCard h2 {
+        text-align: center;
+        padding: 0.5em 0 0.25em;
+        /* background-color: red; */
+    }
+    
+    .memberName {
+        width: 70%;
+        align-items: center;
+        padding-right: 0;
+    }
+    
+    .memberName a {
+        width: 40px;
+        height: 40px;
+        margin: 0.25em;
+    }
+    
+    .memberName img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
 @media screen and (max-width: 800px) {
     .logo img {
         width: 8vw;
@@ -445,12 +560,37 @@ a {
         top: 30vh;
     }
 
+    .memberName {
+        width: 80%;
+    }
+    
+    .memberName p {
+        margin-right: 2.5vw;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
 
     #introCont > * {
         width: 80%;
+    }
+
+    #creditsCont {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .creditCard {
+        width: 80vw;
+    }
+    
+    /* .creditCard img {
+        height: 18em;
+    } */
+    
+    .memberName {
+        width: 65%;
     }
 }
 
@@ -492,6 +632,20 @@ a {
     .panel:after {
         transform: translate(80vw, 0em);
     }
+
+    #creditsCont {
+        padding-bottom: 10vh;
+    }
+
+    .creditCard {
+        width: 85vw;
+        margin: 1em 0;
+    }
+
+    
+    .memberName {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -503,6 +657,21 @@ a {
     #hero img {
         object-fit: cover;
         object-position: center;
+    }
+
+    .creditCard img {
+        height: 14em;
+    }
+
+    .memberName a {
+        width: 40px;
+        height: 40px;
+        margin: 0.25em;
+    }
+    
+    .memberName img {
+        width: 40px;
+        height: 40px;
     }
 }
 
