@@ -207,7 +207,7 @@ a {
     width: 100%;
     object-fit: cover;
     height: 100vh;
-    background-color: black;
+    background-color: hsla(29, 68%, 84%, 0.25);
 }
 
 #hero svg {
