@@ -56,8 +56,7 @@ a:hover {
   font-weight: 100;
 }
 .img_center {
-  width: 70%;
-  margin: 0 auto;
+
 }
 .img_right {
   width: 40%;
@@ -144,9 +143,10 @@ a:hover {
   height: auto;
 }
 .stext2{
-	  padding: 0 10vw;
+	  padding: 0 5vw;
   color: #fff;
   height: auto;
+	justify-content: center;
 }
 .ttextmore {
   padding-top: 10vh !important;
@@ -591,18 +591,17 @@ float: right
   padding-left: 50px;
 }
 .storyimage {
-  width: 70% !important;
-  justify-content: center !important;
-  align-content: center !important;
-  align-items: center !important;
+  width: 100%;
+	padding: 0 10vw;
 }
 .storyimage h6 {
   font-size: 1.0em !important;
 }
 .storyimage img {
-  width: 100% !important;
-  height: auto !important;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+
+
 }
 
 .storyimage2 img {
@@ -775,4 +774,8 @@ font-size: 6vw!important; padding-left: 6vw!important;
 	float: left!important;
 }#rightimage{
 	float: right!important;
+}
+.infographic{
+	width: 80vw!important;
+	background: #fff!important;
 }
