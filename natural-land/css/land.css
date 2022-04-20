@@ -362,7 +362,7 @@ h3 {
 }
 .bstoriestext {
   padding: 50px 160px 30px 30px;
-  font-size: 1em;
+  font-size: .75em;
 }
 .bstories i {
   height: 1em;
@@ -398,7 +398,7 @@ h3 {
   .bstoriestext {
     text-align: center;
     margin: 0 !important;
-    padding: 25px 30px 40px 30px !important;
+    padding: 25px 20vw 40px 20vw !important;
   }
   .bstories h3 {
     font-size: 2.5em;

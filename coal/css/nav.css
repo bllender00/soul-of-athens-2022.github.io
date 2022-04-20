@@ -125,6 +125,7 @@ header a {
 
 .menu.active {
     right: 0;
+	padding-top: 4vh;
 }
 
 .btn1 {
@@ -153,7 +154,7 @@ header a {
 }
 
 a.currentSection {
-    background-color: hsl(0, 0%, 25%);
+    background-color: #ba9c4a;
 }
 
 .current {
@@ -164,7 +165,7 @@ a.currentSection {
 .sublinks {
     display: flex;
     flex-direction: column;
-    background-color: #ba9c4a;
+    background-color: hsl(0, 0%, 25%);
 }
 
 /* FOOTER */
