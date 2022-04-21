@@ -30,7 +30,7 @@ background-position: center!important;
 p {
   font-weight: 300;
   margin: 1em auto;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 a {
   text-decoration: none;
@@ -241,7 +241,11 @@ a {
   height: auto;
 }
 .stext p {
-font-size: 1.25em!important;
+font-size: 1.25em;
+}
+.pull-quote{
+	font-size: 3em!important;
+	font-weight: 800!important;
 }
 .ttextmore {
   padding-top: 10vh !important;
@@ -572,8 +576,4 @@ h3 {
   font-style: italic;
   line-height: 1.5em;
   font-weight: 800;
-}
-.pull-quote {
-  font-weight: bold;
-  font-size: 3em;
 }
