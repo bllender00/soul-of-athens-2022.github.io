@@ -33,9 +33,8 @@
 <meta property="og:url" content="    ">
 <!-- hero --> 
 
-<!-- ANIMATE.CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+<!-- AOS.CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -97,26 +96,26 @@
 <!-- HERO -->
 <section class="container-fluid bgimage">
   <div class="row">
-	  <div class="landingtitle"><h1>NATURAL LAND</h1><!--<h2>History</h2>-->
+	  <div class="landingtitle"><h1 data-aos="fade-in" >NATURAL LAND</h1><!--<h2>History</h2>-->
 	  </div>
   </div>
 </section>
 	
 <section class="container-fluid btext d-flex">
   <div class="row">
-    <p>18,000 years ago, glaciers reshaped the Ohio landscape. These colossal walls of ice moved painstakingly slowly, flattening everything in their path. At the base of the ice lay a mountain of land that grew with every inch it moved. It wasn’t until the glaciers stopped their crawl that the land settled, forming the foothills and mountains across Appalachian America. Once the glaciers melted, the foothills of Appalachia provided a bounty of usable resources for people settling in the area.</p>
-    <p>Some resources like coal or clay may come to mind when thinking of Appalachia, but other resources that once served a crucial role in survival now remain hidden amongst the rest. Herbs that can be used as medicine, or made into tinctures or teas, spring up each year in backyards, but are viewed as an irritating weed that lives and dies, unappreciated and unused. The remains of a tree that could be woven into an eloquent and versatile basket lay rotting in the woods. Even the remnants of a decaying animal can provide a great number of resources for those bold enough.</p>
+    <p data-aos="fade-in" >18,000 years ago, glaciers reshaped the Ohio landscape. These colossal walls of ice moved painstakingly slowly, flattening everything in their path. At the base of the ice lay a mountain of land that grew with every inch it moved. It wasn’t until the glaciers stopped their crawl that the land settled, forming the foothills and mountains across Appalachian America. Once the glaciers melted, the foothills of Appalachia provided a bounty of usable resources for people settling in the area.</p>
+    <p data-aos="fade-in" >Some resources like coal or clay may come to mind when thinking of Appalachia, but other resources that once served a crucial role in survival now remain hidden amongst the rest. Herbs that can be used as medicine, or made into tinctures or teas, spring up each year in backyards, but are viewed as an irritating weed that lives and dies, unappreciated and unused. The remains of a tree that could be woven into an eloquent and versatile basket lay rotting in the woods. Even the remnants of a decaying animal can provide a great number of resources for those bold enough.</p>
   </div>
 </section>
-<section class="container-fluid align-items-center justify-content-center d-flex infographic"> 
+<section class="container-fluid align-items-center justify-content-center d-flex infographic" data-aos="fade-in" > 
 	<img src="images/land/infographic.svg" alt="">
 	
 	</section>
 	
 	<section class="container-fluid btext">
   <div class="row">
-	  	  <p>With so many modern amenities available at the local supermarket, this may seem like an archaic way of viewing the world, but it can provide sustainable goods virtually for free. To some, this way of life is still prevalent and holds a special place in their lives in Appalachia. The key to unlocking this cornucopia of resources is to know what to look for, and to change how people view the environment around them.  </p>
-    <p>Talcon Quinn, a local artist and craftsperson, has learned through years of training how to utilize the resources around her in a way that may not occur to most. Similarly, Rick Vest, a semi-retired farmer, has been trapping in this area for years and has developed an eye for things that are often too minute for many to notice. Follow their stories below to learn more about the Appalachian region and what it means to the people who call this area home.</p>
+	  	  <p data-aos="fade-in" >With so many modern amenities available at the local supermarket, this may seem like an archaic way of viewing the world, but it can provide sustainable goods virtually for free. To some, this way of life is still prevalent and holds a special place in their lives in Appalachia. The key to unlocking this cornucopia of resources is to know what to look for, and to change how people view the environment around them.  </p>
+    <p data-aos="fade-in" >Talcon Quinn, a local artist and craftsperson, has learned through years of training how to utilize the resources around her in a way that may not occur to most. Similarly, Rick Vest, a semi-retired farmer, has been trapping in this area for years and has developed an eye for things that are often too minute for many to notice. Follow their stories below to learn more about the Appalachian region and what it means to the people who call this area home.</p>
 
   </div>	</section>
 
@@ -174,7 +173,36 @@
 	
 	
 <!-- SCRIPTS --> 
+<!-- AOS.JS --> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+<script>
+AOS.init();
 
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 90, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});// JavaScript Document
+  </script> 
 <!-- WOW.JS --> 
 <script src="js/wow.min.js"></script> 
 <!-- BOOTSTRAP --> 
