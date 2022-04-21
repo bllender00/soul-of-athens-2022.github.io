@@ -88,7 +88,7 @@ header a {
     padding: 1em 10vw;
     transition: all 0.3s ease-in-out;
     background-color: inherit;
-    font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);;
+    font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);
 }
 
 .menu a:hover,
