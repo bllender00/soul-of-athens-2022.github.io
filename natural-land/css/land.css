@@ -79,6 +79,8 @@ a {
     height: 100%;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
+	   text-align: left;
+
   }
   .timelinetitle {
     margin: auto;
@@ -86,13 +88,14 @@ a {
     height: 100%;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
+	   text-align: left;
+
   }
   .bgimage h1 {
     padding: 0 0 0 0 !important;
     margin: 0 0 0 0 !important;
     line-height: .75em !important;
     font-size: 10vw !important;
-    text-align: center !important;
     align-content: center !important;
     justify-content: center !important;
   }
@@ -104,9 +107,10 @@ a {
     margin: 0 0 0 0 !important;
     line-height: .75em !important;
     font-size: 10vw !important;
-    text-align: center !important;
     align-content: center !important;
     justify-content: center !important;
+	   text-align: left;
+
   }
   .timelineimage {
     padding-left: 15vw !important;
