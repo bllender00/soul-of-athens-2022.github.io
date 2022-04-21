@@ -147,6 +147,7 @@ p {
 
 header {
     width: 100% !important;
+    z-index: 1000000000000 !important;
 }
 
 .btn {
