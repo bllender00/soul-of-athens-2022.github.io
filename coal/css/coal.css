@@ -14,7 +14,7 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 body {
   background: #191919;
@@ -22,12 +22,15 @@ body {
   font-family: var(--sans);
   font-weight: 400;
   margin: 0;
-  font-size: 16px;}
+  font-size: 16px;
+padding: 0;
+}
 /* BODY TEXT */
 p {
   font-weight: 300;
   font-size: 1.5em;
 	line-height:1.25em;
+	width: 100%;
 }
 a {
   text-decoration: none;
@@ -104,8 +107,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   color: white;
-	padding-top: 40vh;
-	padding: 40vh 17vw 0;
+	padding: 50vh 17vw 0;
 }
 .bgimage h1 {
   color: white;
@@ -137,6 +139,7 @@ a:hover {
   padding: 0 10vw;
   color: #fff;
   height: auto;
+	width: 100%!important;
 }.stext2 p{
   padding: 8vh 5vw 0 0vw;
   color: #fff;
@@ -445,6 +448,7 @@ h3 {
   float: left;
   margin: 0 0 0 5vw!important;
 }
+
 .underline-pq {
   border-bottom: .5vw solid #ba9c49;
 display: inline-block;	
@@ -778,4 +782,19 @@ font-size: 6vw!important; padding-left: 6vw!important;
 .infographic{
 	width: 80vw!important;
 	background: #fff!important;
+}
+
+
+.headline {	font-weight: 800; 
+color: #ba9c49;	font-size: 7vw!important;	text-align: center;	text-transform: uppercase;
+	 margin: 8vh 8vw 5vh 0 !important; width: 100%!important;align-items: center;justify-content: center;	padding: 0 0 0 0!important;
+}
+.underline-c {
+	justify-content: center!important;
+align-items: center!important;
+ margin:0 0 0 0!important;
+	padding:0!important;
+  border-bottom:  1vw solid #ba9c49;
+  width: 100%!important;
+	
 }

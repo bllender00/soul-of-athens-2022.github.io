@@ -81,7 +81,7 @@ header a {
 }
 
 .menu .sublinks a{
-	    padding: 0.5em 10vw!important;
+	    padding: 1.5em 10vw!important;
 	width:100%;
 	font-size: .55em!important;
 
@@ -277,8 +277,8 @@ a.currentSection {
     }
 .menu .sublinks a{
 	width: 100vw!important;
-	    padding: 0.5em 30vw!important;
-	font-size: .55em!important;
+	    padding: 1.5em 30vw!important;
+	font-size: .75em!important;
 
 }
     .footerlinks {
