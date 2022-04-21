@@ -33,6 +33,7 @@
 
     <!-- Template Main CSS File -->
     <link href="css/farming.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
 
 </head>
 
@@ -41,54 +42,33 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-transparent">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <div class="logo">
-                <h1><a href="../index.html"><img src="../favicon/SOA_logo_v003-03.png" width="50px"> FARMING</a></h1>
-            </div>
-
-            <nav id="navbar" class="navbar">
-                <btn class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="dark-blue-text"><i class="fa fa-bars" style="font-size:25px;color:white;margin:0px;"></i></span></btn>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-label" id="offcanvasRightLabel">FARMING IN APPALACHIA</h5>
-                        <p></p>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Farming In Appalachia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="hay.html">Deep Roots: Charles Chase</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="goat.html">Intergrated Acres: Chris Chmiel</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="veg.html">Blaney Family Farms: The Blaney Family</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Soul of Athens
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="../coal/index.html">Coal</a></li>
-                                    <li><a class="dropdown-item" href="../timber/index.html">Timber</a></li>
-                                    <li><a class="dropdown-item" href="../clay/index.html">Clay</a></li>
-                                    <li><a class="dropdown-item" href="../natural-land/index.html">Natural Land</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
+    <header>
+        <div class="returnHome">
+          <a href="../index.html" class="logo">
+            <img src="../favicon/SOA_logo_v003-03.png" alt="Soul of Athens 2022 logo">
+          </a>
+          <a href="index.html" class="resourceHome">Farming</a>
         </div>
-    </header>
+        <div class="menu">
+          <div class="btn">
+            <i class="fa fa-xmark close-btn"></i>
+          </div>
+          <a href="../natural-land/index.html" class="navLink1">Natural Land</a>
+          <a href="../coal/index.html" class="navLink2">Coal</a>
+          <a href="../timber/index.html" class="navLink3">Timber</a>
+          <a href="../clay/index.html" class="navLink4">Clay</a>
+          <a href="../farming/index.html" class="navLink5  currentSection current">Farming</a>
+          <div class="sublinks">
+            <a href="hay.html" class="subLink1">Deep Roots</a>
+            <a href="goat.html" class="subLink2">Integration Acres</a>
+            <a href="veg.html" class="subLink3">Blaney Family Farms</a>
+          </div>
+        </div>
+      
+        <div class="btn">
+          <i class="fa fa-bars menu-btn"></i>
+        </div>
+      </header>
 
 
     <!-- HERO -->
@@ -273,5 +253,39 @@
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
     <script src="js/play-btn.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+        var subLink1 = document.querySelector('.subLink1');
+        var subLink2 = document.querySelector('.subLink2');
+        var subLink3 = document.querySelector('.subLink3');
+        
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add('active');
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    
+        subLink1.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+        
+        subLink2.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    
+        subLink3.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    </script>
 
 </body></html>
