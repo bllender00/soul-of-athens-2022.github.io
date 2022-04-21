@@ -385,4 +385,38 @@
     <script src="js/main.js"></script>
     <script src="js/play-btn.js"></script>
 
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+        var subLink1 = document.querySelector('.subLink1');
+        var subLink2 = document.querySelector('.subLink2');
+        var subLink3 = document.querySelector('.subLink3');
+        
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add('active');
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    
+        subLink1.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+        
+        subLink2.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    
+        subLink3.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    </script>
+
 </body></html>
