@@ -558,6 +558,11 @@ blockquote {
     position: relative;
 }
 
+.slideshow-container.wide {
+    background-color: red;
+    width: 80%;
+}
+
 .slideshow-container.tall {
     width: 35%;
 }
@@ -775,6 +780,10 @@ blockquote {
 
     .slideshow-container {
         width: 60%;
+    }
+
+    .slideshow-container.wide {
+        width: 100%;
     }
 
     .slideshow-container.tall {
