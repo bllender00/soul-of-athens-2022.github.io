@@ -109,6 +109,7 @@ header a {
     cursor: pointer;
     display: block;
     font-size: clamp(2.00rem, calc(1.75rem + 1.25vw), 3.75rem);
+    color: white;
 }
 
 .sticky {
