@@ -14,7 +14,7 @@ header {
     padding: 0 5%!important;
     align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-    font-size: clamp(1.25rem, calc(0.98rem + 1.34vw), 3.13rem);
+    font-size: 2vh;
     color: #fff;
     transition: 0.3s;
     transition-property: top;
@@ -81,9 +81,9 @@ header a {
 }
 
 .menu .sublinks a{
-	    padding: 0.5em 10vw!important;
+	    padding: 1.0em 10vw!important;
 	width:100%;
-	font-size: .55em!important;
+	font-size: 2vh!important;
 
 }
 .sublinks{
@@ -125,7 +125,7 @@ header a {
 
 .menu.active {
     right: 0;
-	padding-top: 4vh;
+	padding-top: 8vh;
 }
 
 .btn1 {
@@ -277,8 +277,8 @@ a.currentSection {
     }
 .menu .sublinks a{
 	width: 100vw!important;
-	    padding: 0.5em 30vw!important;
-	font-size: .55em!important;
+	    padding: 1em 30vw!important;
+	font-size: 2vh!important;
 
 }
     .footerlinks {
@@ -331,17 +331,17 @@ a.currentSection {
 }@media screen and (max-width: 900px) {
 	.footerlinks a {
     padding: 0.5em;
-	font-size: 2.5vw!important;
+	font-size: 2vh!important;
 		
 }
 	#footer p {
-    line-height: 1.5em!important;	font-size: .75em!important;
+    line-height: 1.5em!important;	font-size: 2vh!important;
 
 }
 }@media screen and (max-width: 600px) {
 	.footerlinks a {
     padding: 0.5em;
-	font-size: 3vw!important;
+	font-size: 2vh!important;
 }
 }
 /* FOOTER */
