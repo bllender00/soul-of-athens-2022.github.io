@@ -1,0 +1,79 @@
+/* NAV */
+.nav-indent{
+    margin-left: 40px;
+}
+/* FOOTER */
+#footer {
+    background-color: #c36328!important;
+    height: inherit;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh 0;
+	font-family: var(--sans)
+}
+
+#footer a {
+    color: white;
+}
+
+.footerInside {
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.footerInside a {
+    cursor: pointer;
+    line-height: 1.25em!important;
+}
+
+.footerInside a:hover,
+.footerInside a:active {
+    text-decoration: underline;
+}
+
+.footerLogo {
+    padding: 1em 0.5em;
+    margin: 0 1em;
+}
+
+.footerLogo img {
+    width: 15vw;
+	margin-top: 0!important;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    width: 100%;
+    align-items: center;
+}
+
+.footerlinks a {
+    padding: 0.5em;
+	font-size: var(--footerSize)!important;
+}
+
+#footer p {
+    line-height: 1.5em!important;	font-size: var(--footerSize)!important;
+
+}
+
+.VisCom {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .footerLogo {
+        padding: 2em 0.5em 0.5em;
+        margin: 1em auto 0;
+    }
+
+    .footerLogo img {
+        width: 40vw;
+    }
+}
