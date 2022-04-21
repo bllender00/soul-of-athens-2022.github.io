@@ -88,7 +88,7 @@ header a {
     padding: 1em 10vw;
     transition: all 0.3s ease-in-out;
     background-color: inherit;
-    font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);;
+    font-size: clamp(1.00rem, calc(0.86rem + 0.71vw), 2.00rem);
 }
 
 .menu a:hover,
@@ -117,12 +117,14 @@ header a {
     right: 5.5vw;
     padding: 0.5em;
     /* margin-right: 1em; */
-    margin-top: 0.25em;
+    margin-top: 0.25em;	z-index: 10000!important;
+
 }
 
 .close-btn:hover,
 .close-btn:active {
     background-color: #8a8465;
+	z-index: 10000!important;
 }
 
 .menu.active {
