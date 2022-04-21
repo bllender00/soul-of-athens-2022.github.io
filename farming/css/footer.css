@@ -76,4 +76,9 @@
     .footerLogo img {
         width: 40vw;
     }
+    .footerlinks {
+    flex-direction: column;
+    width: 50vw;
+    height: 25vh;
+}
 }
